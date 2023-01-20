@@ -1,0 +1,944 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Shared  Style */
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    padding-bottom: 5rem 0;
+}
+
+::selection{
+    background-color: #20c997;
+    color: yellow;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    color: #4c4d4d;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    margin: 3.125rem auto;
+    overflow: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.title h2{
+    font-size: 8.25rem;
+    font-weight: 600;
+    color: #dee3e4;
+    position: relative;
+    opacity: 0.4;
+    margin-top: 0;
+    margin: 0 auto;
+}
+
+.title p{
+    font-size: 2.25rem;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    margin-top: 0;
+} 
+
+
+
+.line{
+    width: 5rem;
+    border-bottom: #20c997 0.125rem solid;
+    margin:  auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-width: 0.1875rem;
+    translate: 0 1.8rem;
+}
+
+
+/* End of Shared  Style */
+
+
+
+
+
+
+/* Home Style */
+
+.home{
+    background-image: url(../images/Home\ BG.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;  
+}
+
+
+.darklayer{
+    background-color: rgba(0,0,8,0.7);
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;  
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1.5rem;
+}
+
+nav .logo{
+    text-align: center;
+}
+
+nav .links{
+    margin: 0 auto;   
+}
+
+nav .links ul{
+    display: flex;
+}
+
+nav .links ul li{
+    padding: 0.125rem 1.3rem;
+}
+
+nav .links ul a{
+    color: rgba(206, 204, 201, 0.9);
+}
+
+
+nav .links li .green{
+    color: green;
+}
+
+nav .links ul a:hover{
+    color: green;
+}
+
+
+.homecontent{
+    color:white;
+    text-align: center;
+    position: relative;
+    
+}
+
+.homecontent .myname{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.homecontent p{
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.homecontent .hire-me-button {
+    margin-top: 0.8rem;
+    padding: 1rem 3rem;
+    border: 0.125rem solid green;
+    border-radius: 1.8rem;
+    background-color: transparent;
+    color: honeydew;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 1s;
+
+}
+
+.homecontent .hire-me-button:hover  {
+    background-color: black;
+    color: #dc3545;
+}
+
+
+.home .setting{
+    position: fixed;
+    right: 0;
+}
+
+.home .setting img{
+    width: 2.5rem;
+} 
+
+.myname::after{
+    content: "|";
+    animation-name: typing ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes typing {
+    0%{content: "I|";}
+    1%{content: "I'|";}
+    2%{content: "I'm|";}
+    3%{content: "I'm |";}
+    4%{content: "I'm M|";}
+    5%{content: "I'm Ma|";}
+    6%{content: "I'm Mah|";}
+    7%{content: "I'm Mahm|";}
+    8%{content: "I'm Mahmo|";}
+    9%{content: "I'm Mahmou|";}    
+    10%{content: "I'm Mahmoud|";}
+    11%{content: "I'm Mahmoud |";}
+    12%{content: "I'm Mahmoud T|";}
+    13%{content: "I'm Mahmoud Ta|";}
+    14%{content: "I'm Mahmoud Tah|";}
+    15%{content: "I'm Mahmoud Taha|";}
+    16%{content: "I'm Mahmoud Taha|";}
+    17%{content: "I'm Mahmoud Taha|";}
+    18%{content: "I'm Mahmoud Taha|";}
+    19%{content: "I'm Mahmoud Tah|";}
+    20%{content: "I'm Mahmoud Ta|";}
+    21%{content: "I'm Mahmoud T|";}
+    22%{content: "I'm Mahmoud |";}
+    23%{content: "I'm Mahmoud|";}
+    24%{content: "I'm Mahmou|";}    
+    25%{content: "I'm Mahmo|";}
+    26%{content: "I'm Mahm|";}
+    27%{content: "I'm Mah|";}
+    28%{content: "I'm Ma|";}
+    29%{content: "I'm M|";}
+    30%{content: "I'm |";}
+    31%{content: "I'm|";}
+    32%{content: "I'|";}
+    33%{content: "I|";}
+    34%{content: "|";}
+    
+
+    35%{content: "I|";}
+    36%{content: "I'|";}
+    37%{content: "I'm|";}
+    38%{content: "I'm |";}
+    39%{content: "I'm a|";}
+    40%{content: "I'm a |";}
+    41%{content: "I'm a D|";}
+    42%{content: "I'm a De|";}
+    43%{content: "I'm a Dev|";}
+    44%{content: "I'm a Deve|";}
+    45%{content: "I'm a Devel|";}
+    46%{content: "I'm a Develo|";}
+    47%{content: "I'm a Develop|";}
+    48%{content: "I'm a Develope|";}
+    49%{content: "I'm a Developer|";}
+    50%{content: "I'm a Developer|";}
+    51%{content: "I'm a Developer|";}
+    52%{content: "I'm a Developer|";}
+    53%{content: "I'm a Develope|";}
+    54%{content: "I'm a Develop|";}
+    55%{content: "I'm a Develo|";}
+    56%{content: "I'm a Devel|";}
+    57%{content: "I'm a Deve|";}
+    58%{content: "I'm a Dev|";}
+    59%{content: "I'm a De|";}
+    60%{content: "I'm a D|";}
+    61%{content: "I'm a |";}
+    62%{content: "I'm a|";}
+    63%{content: "I'm |";}
+    64%{content: "I'm|";}
+    65%{content: "I'|";}
+    66%{content: "I|";}
+    67%{content: "|";}
+
+
+    68%{content: "I|";}
+    69%{content: "I'|";}
+    70%{content: "I'm|";}
+    71%{content: "I'm |";}
+    72%{content: "I'm a|";}
+    73%{content: "I'm a |";}
+    74%{content: "I'm a D|";}
+    75%{content: "I'm a De|";}
+    76%{content: "I'm a Des|";}
+    77%{content: "I'm a Desi|";}
+    78%{content: "I'm a Desig|";}
+    79%{content: "I'm a Designe|";}
+    80%{content: "I'm a Designer|";}
+    81%{content: "I'm a Designer|";}
+    82%{content: "I'm a Designer|";}
+    83%{content: "I'm a Designer|";}
+    84%{content: "I'm a Designer|";}
+    85%{content: "I'm a Designe|";}
+    86%{content: "I'm a Design|";}
+    87%{content: "I'm a Desig|";}
+    88%{content: "I'm a Desi|";}
+    89%{content: "I'm a Des|";}
+    90%{content: "I'm a De|";}
+    91%{content: "I'm a |D";}
+    92%{content: "I'm a|";}
+    93%{content: "I'm a|";}
+    94%{content: "I'm |";}
+    95%{content: "I'm|";}
+    96%{content: "I'|";}
+    97%{content: "I|";}
+    98%{content: "|";}
+    99%{content: "|";}
+    100%{content: "|";}
+
+
+    
+}
+
+/* End of Home Style */
+
+
+
+
+
+
+/* Start of About Style */
+
+.about .aboutcontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .paragraph{
+    width: 65%;
+    padding:  1.2rem 0;
+}
+
+.about .paragraph p{
+    padding: 0.125rem;
+    margin: 1rem 0;
+}
+
+.about .paragraph .aboutme-paragaph{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.about .paragraph span{
+    color: #20c997;
+}
+
+
+.about .information{
+    width: 25%;
+
+}
+
+.about .information ul{
+    list-style-type: none;
+    margin-bottom: 0.8rem;
+}
+
+.about .information ul li{
+    padding: 0.8rem;
+    border-bottom: 0.0625rem solid #eaeaea;
+}
+
+.about .information ul .no-border{
+    border-bottom: none;
+}
+
+.about .information ul span{
+    font-weight: bold;
+}
+.about .information ul a{
+    color: #20c997;
+    text-decoration: none;
+}
+.about .information button{
+    padding: 0.8rem 2.5rem;
+    border-width: 0.125rem;
+    background-color: #20c997;
+    border-color: #20c997;
+    color: white;
+    border-radius: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about .experience {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2rem;
+}
+.about .experience .exp {
+    border-right: 0.125rem solid #eaeaea;
+    flex-grow: 1;
+    width: 25%;
+
+}
+.about .experience  .no-border {
+    border: none;
+}
+
+.about .experience .exp h4{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+
+/* End of About Style */
+
+
+
+
+
+
+
+
+
+/* Start of What-I_DO Style */
+
+.what-i-do{
+    background-color: #f8f9fa;
+}
+
+.what-i-do-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+
+}
+
+.what-i-do-content .item{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.what-i-do-content .item img{
+    width: 4rem;
+    margin-right: 0.6rem;
+    border: 0.0625rem solid wheat;
+}
+
+.what-i-do-content .item h3{
+    margin-bottom: 0.3125rem;
+}
+
+.what-i-do-content .item p{
+    padding: 0.3125rem 0;
+}
+
+
+/* End of What-I_DO Style */
+
+
+
+
+
+
+/* Start of Resume Style */
+
+.resume .resume-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.resume .resume-content .myeduction{
+    width: 48%;
+}
+
+
+.resume .resume-content .myexperience{
+    width: 48%;
+
+}
+
+.resume .resume-content .resume-item
+{
+    margin: 1.2rem 0;
+    padding: 1.2rem;
+    border: 0.0625rem solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.resume .resume-content .resume-item .date{
+    padding: 0.3125rem 0.625rem;
+    background-color:  #20c997;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+.resume .resume-content .resume-item h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #252b33;
+    margin-bottom: 1rem;
+}
+
+.resume .resume-content .resume-item .place{
+    color:  #dc3545;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.resume .resume-content .myskills{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume .resume-content .myskills h2{
+    width: 100%;
+}
+
+
+.resume .resume-content .myskills .skill {
+    width: 48%;
+    margin: 0.625rem 0;
+    padding:1.25rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.resume .resume-content .myskills .skill .percent {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 0.3125rem;
+    display: flex;
+}
+
+.resume .resume-content .myskills .skill .percent1 .green {
+    background-color: #20c997;
+    width: 65%;
+}
+
+.resume .resume-content .myskills .skill .percent1 .gray {
+    background-color: gray;
+    width: 35%;
+}
+
+.resume .resume-content .myskills .skill .percent2 .green {
+    background-color: #20c997;
+    width: 70%;
+}
+
+.resume .resume-content .myskills .skill .percent2 .gray {
+    background-color: gray;
+    width: 30%;
+}
+
+.resume .resume-content .myskills .skill .percent3 .green {
+    background-color: #20c997;
+    width: 95%;
+}
+
+.resume .resume-content .myskills .skill .percent3 .gray {
+    background-color: gray;
+    width: 5%;
+}
+
+.resume .resume-content .myskills .skill .percent4 .green {
+    background-color: #20c997;
+    width: 60%;
+}
+
+.resume .resume-content .myskills .skill .percent4 .gray {
+    background-color: gray;
+    width: 40%;
+}
+
+.resume .resume-content .myskills .skill .percent5 .green {
+    background-color: #20c997;
+    width: 80%;
+}
+
+.resume .resume-content .myskills .skill .percent5 .gray {
+    background-color: gray;
+    width: 20%;
+}
+
+.resume .resume-content .myskills .skill .percent6 .green {
+    background-color: #20c997;
+    width: 99%;
+}
+
+.resume .resume-content .myskills .skill .percent6 .gray {
+    background-color: gray;
+    width: 1%;
+}
+
+
+.resume .resume-content form{
+margin: auto;
+}
+
+.resume .resume-content form button{
+    padding: 1rem 4rem;
+    border-width: 0.1875rem;
+    background-color: transparent;
+    border-color: #20c997 ;
+    color: gray;
+    border-radius: 1.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 1s;   
+}
+
+.resume .resume-content button:hover  {
+    background-color: gray;
+    color: white;
+}
+
+
+/* End of Resume Style */
+
+
+
+
+
+/* Start of Portfolio Style */
+
+.portfolio{
+    text-align: center;
+    background-color: #f8f9fa;
+    
+}
+
+.portfolio .portfoliocontent .links ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+}
+
+.portfolio .portfoliocontent .links ul li{
+    width: 5%;
+    padding: 1.2rem 0.6125rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(206, 204, 201, 0.9);
+}
+
+.portfolio .portfoliocontent .links ul a{
+    text-decoration: none;
+}
+
+.portfolio .portfoliocontent .links  .green{
+    color: green;
+}
+
+.portfolio .portfoliocontent .links  ul li:hover{
+    color: green;
+}
+
+
+.portfolio .portfoliocontent .photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfoliocontent .photos .column1{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfoliocontent .photos .column2{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfoliocontent .photos .column3{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfoliocontent .photos .photo{
+    margin: 0.8rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio .portfoliocontent .photos img{
+    width: 100%;
+}
+
+.portfolio .portfoliocontent .photos .photo .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 1.2rem;
+    transition: opacity 3s ease;   
+}
+
+
+.portfolio .portfoliocontent .photos .photo:hover  .text{
+    opacity: 1;
+} 
+
+
+/* End of Resume Style */
+
+
+
+
+
+/* Start of Client Style */
+
+.clientcontent {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientcontent .client-screen{
+    width: 80%;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    border: 0.125rem solid yellowgreen;
+    border-radius: 0.5rem;
+    background-color: #4c4d4d;
+    color: #dee2e6;
+}
+
+.clientcontent .client-screen h3{
+    color: #dc3545;
+}
+
+.clientcontent .client-screen .company{
+    color: #20c997;
+}
+
+.clientcontent .client-screen .row{
+    display: flex;
+    align-items: center;
+}
+
+.clientcontent .client-screen .row img{
+    border-radius: 50%;
+    margin:0.6125rem ;
+}
+
+
+.clientcontent .client-screen i{
+    margin-top: 1.2rem;
+    color: yellow;
+}
+
+/* End of Client Style */
+
+
+
+
+
+
+
+
+/* Start of Contact Style */
+
+.contact{
+    background-color: #f8f9fa;
+    padding-bottom: 4rem;
+
+
+}
+.contact .contactcontent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .contactcontent .contactinfo{
+    padding: 1.2rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact .contactcontent .contactinfo h2{
+    padding: 1.2rem 0;
+}
+
+.contact .contactcontent .contactinfo pre{
+    font-size: 1rem;
+}
+
+
+.contact .contactcontent .contactinfo ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact .contactcontent .contactinfo ul li{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.contact .contactcontent .contactinfo ul li i{
+    padding-right: 0.6125rem;
+    color: #20c997;
+}
+
+.contact .contactform{
+    width: 65%;
+
+}
+
+.contact form{
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.contact .contactform h2{
+    padding: 2.2rem 0;
+}
+
+.contact .contactform input ,.contact .contactform textarea  {
+    padding: 0.6125rem;
+    border-radius: 0.5rem;
+    border: #20c997 0.125rem solid;        
+    margin: 1.2rem 0;
+    font-size: 1rem;
+}
+
+.contact .contactform .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact .contactform #name{
+    width: 45%;
+
+}
+
+.contact .contactform #email{
+    width: 45%;
+}
+
+.contact .contactform button{
+    padding: 0.8rem 4rem;
+    border-width: 0.125rem;
+    background-color: #20c997;
+    border-color: #20c997;
+    color: white;
+    border-radius: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: 0.5s background-color color;
+}
+
+.contact .contactform button:hover{
+    background-color:aquamarine;
+    color: #252b33;
+}
+
+/* End of Contact Style */
+
+
+
+
+
+
+
+
+/* Start of Footer Style */
+
+.footer{
+    padding: 4rem 0;
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footercontent .copyright a{
+    color: #20c997;
+    text-decoration: none;
+}
+
+.footercontent .terms a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+
+}
+
+.footercontent .terms a:hover{
+    color: #20c997;
+}
+
+
+.footercontent .terms-policy{
+    padding: 0 0.6125rem;
+    border-right: 0.0625rem solid black;
+}
+
+/* End of Footer Style */

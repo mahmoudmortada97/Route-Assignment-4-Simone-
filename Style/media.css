@@ -1,0 +1,371 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+    nav{
+        flex-direction: column;
+    }
+
+    nav .links ul{
+        flex-direction: column;
+        text-align: center;
+        margin: 1.2rem ;
+        padding: 0.8rem ;
+        background-color: gray;
+    }
+
+    .homecontent{
+        margin-top: 3.1rem;
+    }
+
+    .homecontent .myname{
+        font-size: 3.125rem;
+    }
+
+    .title h2{
+        font-size: 3.125rem;
+    }
+
+    .about .aboutcontent{
+        flex-wrap: wrap;
+    }
+
+    .about .paragraph{
+        width: 100%;
+    }
+
+    .about .information{
+        width: 100%;
+    }
+
+    .about .experience {
+        flex-wrap: wrap;   
+    }
+
+    .about .experience .exp {
+        width: 50%;    
+        padding: 0.8rem;
+        border-bottom: 0.0625rem solid #eaeaea;
+    }
+    
+    .about .experience .no-border {
+        border-right: 0.0625rem solid #eaeaea;
+    }
+
+    .what-i-do-content .item{
+    width: 100%;
+    }
+
+
+    .resume .resume-content .myeduction{
+        width: 100%;
+    }
+
+    .resume .resume-content .myexperience{
+        width: 100%;
+    }
+
+    .resume .resume-content .myskills .skill {
+        width: 100%;
+    }
+    
+    .portfolio .portfoliocontent .photos .column1{
+        width: 100%;
+    }
+    
+    .portfolio .portfoliocontent .photos .column2{
+        width: 100%;
+    }
+
+    .portfolio .portfoliocontent .photos .column3{
+        width: 100%;
+    }
+
+    .contact .contactcontent{
+        flex-direction: column-reverse;
+    }
+
+    .contact .contactcontent .contactinfo{
+        width: 100%;
+    }
+
+    .contact .contactcontent .contactinfo ul{
+        align-items: center;
+    }
+
+    .contact .contactform{
+        width: 100%;
+    }
+
+    .footercontent{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .footercontent .copyright{
+    padding-bottom:1.2rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    nav{
+        flex-direction: column;
+    }
+
+    nav .links ul{
+        flex-direction: column;
+        text-align: center;
+        margin: 1.2rem 0;
+        padding: 0.8rem;
+        background-color: gray;
+    }
+
+    .homecontent{
+        margin-top: 4rem;
+    }
+
+    .title h2{
+        font-size: 4rem;
+    }
+
+    .about .aboutcontent{
+        flex-wrap: wrap;
+    }
+
+    .about .paragraph{
+        width: 100%;
+    }
+
+    .about .information{
+        width: 100%;
+    }
+
+    .about .information{
+        width: 100%;
+    }
+
+    .about .experience {
+        flex-wrap: wrap;
+        
+    }
+
+    .about .experience .exp {
+        width: 50%;    
+        padding: 0.8rem;
+        border-bottom: 0.0625rem solid #eaeaea;
+    }
+
+    .about .experience .no-border {
+        border-right: 0.0625rem solid #eaeaea;
+    }
+
+    .what-i-do-content .item{
+    width: 100%;
+    }
+
+    .resume .resume-content .myeduction{
+        width: 100%;
+    }
+
+    .resume .resume-content .myexperience{
+        width: 100%;
+    }
+
+    .resume .resume-content .myskills .skill {
+        width: 100%;
+    }
+
+    .portfolio .portfoliocontent .photos .column1{
+        width: 70%;
+        margin: auto;
+    }
+
+    .portfolio .portfoliocontent .photos .column2{
+        width: 50%;
+    }
+    
+    .portfolio .portfoliocontent .photos .column3{
+        width: 50%;
+    }
+
+    .contact .contactcontent{
+        flex-direction: column-reverse;
+    }
+
+    .contact .contactcontent .contactinfo{
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact .contactcontent .contactinfo ul{
+        align-items: center;
+    }
+
+    .contact .contactform{
+        width: 100%;
+    }
+
+    .footercontent{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footercontent .copyright{
+        padding-bottom:20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav .links ul{
+        flex-direction: column;
+        text-align: center;
+        margin: 1.2rem 0;
+        padding: 0.8rem;
+        background-color: gray;
+    }
+    
+    .homecontent{
+        margin-top: 4rem;
+    }
+
+    .title h2{
+        font-size: 5.625rem;
+    }
+    
+    .about .aboutcontent{
+        flex-wrap: wrap;
+    }
+    
+    .about .paragraph{
+        width: 100%;
+    }
+    
+    .about .information{
+        width: 100%;
+    }
+
+    .about .experience {
+        flex-wrap: nowrap;        
+    }
+    
+    .about .experience .exp {
+        width: 25%;    
+        padding: 0;
+        border-bottom: none;
+    }
+    
+    .about .experience .no-border {
+        border-right: none;
+    }
+
+    .what-i-do-content .item{
+    width: 50%;
+    }
+
+    .resume .resume-content .myeduction{
+        width: 48%;
+    }
+
+    .resume .resume-content .myexperience{
+        width: 48%;
+    }
+
+    .resume .resume-content .myskills .skill {
+        width: 48%;
+    }
+
+    .contact .contactcontent .contactinfo ul{
+        width: 100%;
+    }
+    
+    .footercontent{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .footercontent .copyright{
+        padding-bottom:1.2rem;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    nav{
+        flex-direction: row;
+    }
+
+    nav .links ul{
+        flex-direction: row;
+        margin: 1.2rem 0;
+        padding: 0.8rem;
+        background-color: transparent;
+    }
+
+    .homecontent{
+        margin-top: 4rem;
+    }
+
+    .title h2{
+        font-size: 6.875rem;
+    }
+
+    .about .aboutcontent{
+        flex-wrap: nowrap;
+    }
+
+    .about .paragraph{
+        width: 65%;
+        text-align: left;
+    }
+
+    .about .information{
+        width: 25%;
+    }
+
+    .portfolio .portfoliocontent .photos .column1{
+        width: 33%;
+    }
+
+    .portfolio .portfoliocontent .photos .column2{
+        width: 33%;
+    }
+    
+    .portfolio .portfoliocontent .photos .column3{
+        width: 33%;
+        flex-direction: column;
+    }
+
+    .contact .contactcontent{
+        flex-direction: row;
+    }
+
+    .contact .contactcontent .contactinfo{
+        width: 35%;
+        align-items: flex-start;
+    }
+
+    .contact .contactform{
+        width: 55%;
+    }
+
+    .contact .contactcontent .contactinfo ul{
+        align-items: flex-start;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .title h2{
+        font-size: 8.25rem;
+    }
+}
