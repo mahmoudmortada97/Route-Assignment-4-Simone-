@@ -20,3 +20,17 @@ Here's a preview of the Simone landing page:
 ## Getting Started
 
 To get started with the Simone landing page, simply clone this repository to your local machine:
+
+Then, open the `index.html` file in your web browser to view the landing page.
+
+## Customization
+
+The Simone landing page is fully customizable, allowing you to personalize it to your own needs. To customize the landing page, simply edit the HTML and CSS files and replace the images with your own.
+
+## Credits
+
+The Simone landing page was created by Mahmoud Mortada. The landing page is based on the SB Admin 2 template by Start Bootstrap.
+
+## License
+
+The Simone landing page is open source and is released under the MIT License.
